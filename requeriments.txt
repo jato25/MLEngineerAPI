@@ -6,3 +6,4 @@ scikit-learn
 python
 flask-restful
 pyodbc
+flasgger

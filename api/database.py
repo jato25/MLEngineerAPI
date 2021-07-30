@@ -1,6 +1,5 @@
-from parameters import DATABASE_QUERY
 import pyodbc
-from parameters import DATABASE_CONNECTION, SPECTED_ORDER_FEATURES
+from parameters import DATABASE_CONNECTION, SPECTED_ORDER_FEATURES, DATABASE_QUERY
 
 connection = pyodbc.connect(DATABASE_CONNECTION)
 db = connection.cursor()

@@ -1,3 +1,5 @@
+import socket
+
 SPECTED_ORDER_FEATURES = ['order_id'
                         ,'store_id'
                         ,'created_at'
@@ -16,7 +18,7 @@ MODEL_INPUT_FEATURES = ['to_user_distance', 'total_earning']
 MODEL = 'model'
 
 DATABASE_CONNECTION = ('Driver={SQL Server};'
-                      'Server=OLIMPIAITLP074;'
+                      'Server=' + socket.gethostname() + ';'
                       'Database=RappiML;'
                       'Trusted_Connection=yes;')
 
